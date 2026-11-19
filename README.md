@@ -1,30 +1,31 @@
 <div align="center">
 
-  <!-- ROYAL HEADER SVG (LOCALLY HOSTED) -->
-  <img src="./header.svg" alt="Muhammad Ikhsan Fauzi" width="850" />
+  <!-- HEADER UTAMA (LOCALLY HOSTED SVG) -->
+  <div>
+    <img src="./header.svg" alt="Muhammad Ikhsan Fauzi Banner" width="850" />
+  </div>
   <br/>
 
-  <!-- METRIC BADGES -->
-  <a href="https://github.com/IkhsanFreya">
-    <img src="https://img.shields.io/github/stars/IkhsanFreya?style=for-the-badge&color=00f2fe&labelColor=070d18&logo=github&logoColor=00f2fe" alt="GitHub Stars" />
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=IkhsanFreya&color=818cf8&style=for-the-badge&labelColor=070d18&label=PROFILE+VIEWS" alt="Profile Views" />
-  <a href="https://www.linkedin.com/in/m-ikhsan-fauzi">
-    <img src="https://img.shields.io/badge/LINKEDIN-m--ikhsan--fauzi-0a66c2?style=for-the-badge&labelColor=070d18&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://ikhsanfreya.github.io">
-    <img src="https://img.shields.io/badge/LIVE_PORTFOLIO-ikhsanfreya.github.io-3b82f6?style=for-the-badge&labelColor=070d18&logo=googlechrome&logoColor=white" alt="Portfolio" />
-  </a>
-  <br/><br/>
+  <!-- METRIK PAMERAN: STARS, VIEWS, LINKEDIN & PORTFOLIO -->
+  <div>
+    <a href="https://github.com/IkhsanFreya">
+      <img src="https://img.shields.io/github/stars/IkhsanFreya?style=for-the-badge&color=f59e0b&labelColor=020c09&logo=github&logoColor=f59e0b" alt="GitHub Stars" />
+    </a>
+    <img src="https://komarev.com/ghpvc/?username=IkhsanFreya&color=00f2fe&style=for-the-badge&labelColor=020c09&label=PROFILE+VIEWS" alt="Profile Views" />
+    <a href="https://www.linkedin.com/in/m-ikhsan-fauzi">
+      <img src="https://img.shields.io/badge/LINKEDIN-m--ikhsan--fauzi-0a66c2?style=for-the-badge&labelColor=020c09&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+    <a href="https://ikhsanfreya.github.io">
+      <img src="https://img.shields.io/badge/LIVE_PORTFOLIO-ikhsanfreya.github.io-3b82f6?style=for-the-badge&labelColor=020c09&logo=googlechrome&logoColor=white" alt="Portfolio" />
+    </a>
+  </div>
+  <br/>
 
-  <!-- ROYAL ANIMATED DEVELOPER TERMINAL SVG (LOCALLY HOSTED) -->
-  <img src="./terminal.svg" alt="Royal Animated Developer Terminal" width="850" />
-  <br/><br/>
-
-  <!-- ANIME WORKSTATION AESTHETIC VISUAL LOOP (LOCALLY HOSTED) -->
-  <p align="center">
-    <img src="./anime.gif" width="850" style="border-radius: 14px; border: 1px solid rgba(0, 242, 254, 0.25);" alt="Anime Workstation Loop" />
-  </p>
+  <!-- TERMINAL KODE (LOCALLY HOSTED SVG) -->
+  <div>
+    <img src="./terminal.svg" alt="Animated Developer Terminal" width="850" />
+  </div>
+  <br/>
 
   <!-- QUICK NAVIGATION BAR -->
   <p align="center">
