@@ -1,4 +1,4 @@
-<svg fill="none" viewBox="0 0 850 450" width="100%" height="450" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 850 400" width="100%" height="400" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; padding: 10px 20px 0px 20px; box-sizing: border-box; display: flex; justify-content: center; align-items: center;">
       
@@ -37,13 +37,13 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          padding: 12px 18px;
+          padding: 10px 16px;
           border-bottom: 1px solid rgba(0, 242, 254, 0.18);
           background: rgba(4, 8, 18, 0.85);
         }
 
         .dots { display: flex; gap: 7px; }
-        .dot { width: 12px; height: 12px; border-radius: 50%; box-shadow: 0 0 8px rgba(0,0,0,0.4); }
+        .dot { width: 11px; height: 11px; border-radius: 50%; box-shadow: 0 0 8px rgba(0,0,0,0.4); }
         .dot.red { background: #ff5f57; }
         .dot.yellow { background: #ffbd2e; }
         .dot.green { background: #28c840; }
@@ -55,8 +55,8 @@
 
         @keyframes pulse { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
 
-        .body { padding: 18px 22px; display: flex; font-size: 12px; line-height: 1.75; position: relative; }
-        .gutter { display: flex; flex-direction: column; align-items: flex-end; padding-right: 18px; color: #334155; user-select: none; font-weight: 500; }
+        .body { padding: 16px 20px; display: flex; font-size: 12px; line-height: 1.7; position: relative; }
+        .gutter { display: flex; flex-direction: column; align-items: flex-end; padding-right: 16px; color: #334155; user-select: none; font-weight: 500; }
         .code { display: flex; flex-direction: column; width: 100%; overflow: hidden; }
         
         .line-box {
@@ -66,34 +66,30 @@
           vertical-align: bottom;
         }
 
-        /* 15s TOTAL LOOP CYCLE WITH MECHANICAL TYPING EFFECT */
-        .type-l1  { animation: tL1  15s infinite; }
-        .type-l2  { animation: tL2  15s infinite; }
-        .type-l3  { animation: tL3  15s infinite; }
-        .type-l4  { animation: tL4  15s infinite; }
-        .type-l5  { animation: tL5  15s infinite; }
-        .type-l6  { animation: tL6  15s infinite; }
-        .type-l7  { animation: tL7  15s infinite; }
-        .type-l8  { animation: tL8  15s infinite; }
-        .type-l9  { animation: tL9  15s infinite; }
-        .type-l10 { animation: tL10 15s infinite; }
-        .type-l11 { animation: tL11 15s infinite; }
-        .type-l12 { animation: tL12 15s infinite; }
-        .type-l13 { animation: tL13 15s infinite; }
+        /* 14s TOTAL LOOP CYCLE WITH MECHANICAL TYPING EFFECT */
+        .type-l1  { animation: tL1  14s infinite; }
+        .type-l2  { animation: tL2  14s infinite; }
+        .type-l3  { animation: tL3  14s infinite; }
+        .type-l4  { animation: tL4  14s infinite; }
+        .type-l5  { animation: tL5  14s infinite; }
+        .type-l6  { animation: tL6  14s infinite; }
+        .type-l7  { animation: tL7  14s infinite; }
+        .type-l8  { animation: tL8  14s infinite; }
+        .type-l9  { animation: tL9  14s infinite; }
+        .type-l10 { animation: tL10 14s infinite; }
+        .type-l11 { animation: tL11 14s infinite; }
 
-        @keyframes tL1  { 0% { max-width: 0; opacity: 1; } 5% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
-        @keyframes tL2  { 0%, 5% { max-width: 0; opacity: 1; } 10% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
-        @keyframes tL3  { 0%, 10% { max-width: 0; opacity: 1; } 15% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
-        @keyframes tL4  { 0%, 15% { max-width: 0; opacity: 1; } 22% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
-        @keyframes tL5  { 0%, 22% { max-width: 0; opacity: 1; } 29% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
-        @keyframes tL6  { 0%, 29% { max-width: 0; opacity: 1; } 36% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
-        @keyframes tL7  { 0%, 36% { max-width: 0; opacity: 1; } 43% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
-        @keyframes tL8  { 0%, 43% { max-width: 0; opacity: 1; } 50% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
-        @keyframes tL9  { 0%, 50% { max-width: 0; opacity: 1; } 57% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
-        @keyframes tL10 { 0%, 57% { max-width: 0; opacity: 1; } 64% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
-        @keyframes tL11 { 0%, 64% { max-width: 0; opacity: 1; } 71% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
-        @keyframes tL12 { 0%, 71% { max-width: 0; opacity: 1; } 78% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
-        @keyframes tL13 { 0%, 78% { max-width: 0; opacity: 1; } 84% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL1  { 0% { max-width: 0; opacity: 1; } 6%  { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL2  { 0%, 6%  { max-width: 0; opacity: 1; } 13% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL3  { 0%, 13% { max-width: 0; opacity: 1; } 20% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL4  { 0%, 20% { max-width: 0; opacity: 1; } 28% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL5  { 0%, 28% { max-width: 0; opacity: 1; } 37% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL6  { 0%, 37% { max-width: 0; opacity: 1; } 46% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL7  { 0%, 46% { max-width: 0; opacity: 1; } 55% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL8  { 0%, 55% { max-width: 0; opacity: 1; } 64% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL9  { 0%, 64% { max-width: 0; opacity: 1; } 73% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL10 { 0%, 73% { max-width: 0; opacity: 1; } 82% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL11 { 0%, 82% { max-width: 0; opacity: 1; } 88% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
 
         .cursor {
           display: inline-block;
@@ -111,7 +107,7 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          padding: 8px 18px;
+          padding: 7px 16px;
           border-top: 1px solid rgba(0, 242, 254, 0.15);
           background: rgba(0, 242, 254, 0.04);
           color: #64748b;
@@ -132,28 +128,26 @@
 
         <div class="body">
           <div class="gutter">
-            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span>
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span>
           </div>
           
           <div class="code">
             <div><span class="line-box type-l1" style="color: #c084fc;"><span style="color: #f43f5e;">import</span> { FullStack, RobloxStudio, SpatialWebAR } <span style="color: #f43f5e;">from</span> <span style="color: #38bdf8;">"@ikhsan/craft"</span>;</span></div>
             <div><span class="line-box type-l2" style="color: #e2e8f0;"><span style="color: #f43f5e;">export const</span> <span style="color: #facc15;">developer</span>: Engineer = {</span></div>
             <div><span class="line-box type-l3" style="color: #e2e8f0;">  name: <span style="color: #00f2fe;">"Muhammad Ikhsan Fauzi"</span>,</span></div>
-            <div><span class="line-box type-l4" style="color: #e2e8f0;">  role: <span style="color: #a78bfa;">"Roblox Game Dev • Full-Stack • UI/UX &amp; 2D Animator"</span>,</span></div>
-            <div><span class="line-box type-l5" style="color: #e2e8f0;">  gamedev: [<span style="color: #fca5a5;">"Roblox Studio (Luau)"</span>, <span style="color: #fde68a;">"PyOpenGL 3D"</span>, <span style="color: #fde68a;">"Unity &amp; Blender"</span>],</span></div>
-            <div><span class="line-box type-l6" style="color: #e2e8f0;">  frontend: [<span style="color: #7dd3fc;">"React"</span>, <span style="color: #7dd3fc;">"Next.js"</span>, <span style="color: #7dd3fc;">"Vue 3"</span>, <span style="color: #7dd3fc;">"Nuxt 4"</span>, <span style="color: #7dd3fc;">"Tailwind"</span>],</span></div>
-            <div><span class="line-box type-l7" style="color: #e2e8f0;">  backend: [<span style="color: #f472b6;">"Laravel"</span>, <span style="color: #f472b6;">"Node.js"</span>, <span style="color: #f472b6;">"Express"</span>, <span style="color: #f472b6;">"FastAPI"</span>, <span style="color: #f472b6;">"MySQL"</span>],</span></div>
-            <div><span class="line-box type-l8" style="color: #e2e8f0;">  creative: [<span style="color: #f472b6;">"After Effects 2D Animation"</span>, <span style="color: #f472b6;">"Figma UI/UX"</span>, <span style="color: #f472b6;">"Photoshop"</span>],</span></div>
-            <div><span class="line-box type-l9" style="color: #e2e8f0;">  systems: [<span style="color: #34d399;">"MikroTik MTCNA (#2505NA5241)"</span>, <span style="color: #34d399;">"Red Hat Linux Admin"</span>],</span></div>
-            <div><span class="line-box type-l10" style="color: #e2e8f0;">  craft: [<span style="color: #00f2fe;">"Desktop AI (NVENC)"</span>, <span style="color: #00f2fe;">"Spatial WebAR (Three.js)"</span>, <span style="color: #00f2fe;">"IoT Arduino"</span>],</span></div>
-            <div><span class="line-box type-l11" style="color: #94a3b8;">  philosophy: <span style="color: #fde68a;">"Elegance in Architecture • Precision in Execution"</span>,</span></div>
-            <div><span class="line-box type-l12" style="color: #e2e8f0;">  build: <span style="color: #f43f5e;">async</span> () =&gt; <span style="color: #f43f5e;">await</span> Impact.create({ standard: <span style="color: #00f2fe;">"Exceptional"</span> })</span></div>
-            <div><span class="line-box type-l13" style="color: #e2e8f0;">};<span class="cursor"></span></span></div>
+            <div><span class="line-box type-l4" style="color: #e2e8f0;">  role: <span style="color: #a78bfa;">"Software Engineer &amp; Roblox Game Dev"</span>,</span></div>
+            <div><span class="line-box type-l5" style="color: #e2e8f0;">  gamedev: [<span style="color: #fca5a5;">"Roblox Studio (Luau)"</span>, <span style="color: #fde68a;">"Unity"</span>, <span style="color: #fde68a;">"PyOpenGL 3D"</span>],</span></div>
+            <div><span class="line-box type-l6" style="color: #e2e8f0;">  stack: [<span style="color: #7dd3fc;">"TypeScript"</span>, <span style="color: #7dd3fc;">"React"</span>, <span style="color: #7dd3fc;">"Next.js"</span>, <span style="color: #7dd3fc;">"Python"</span>, <span style="color: #7dd3fc;">"Laravel"</span>],</span></div>
+            <div><span class="line-box type-l7" style="color: #e2e8f0;">  creative: [<span style="color: #f472b6;">"After Effects 2D Animation"</span>, <span style="color: #f472b6;">"Figma UI/UX"</span>],</span></div>
+            <div><span class="line-box type-l8" style="color: #e2e8f0;">  systems: [<span style="color: #34d399;">"MikroTik MTCNA (#2505NA5241)"</span>, <span style="color: #34d399;">"Red Hat Linux"</span>],</span></div>
+            <div><span class="line-box type-l9" style="color: #94a3b8;">  focus: <span style="color: #fde68a;">"Architecting immersive web apps, spatial 3D &amp; high-performance games"</span>,</span></div>
+            <div><span class="line-box type-l10" style="color: #e2e8f0;">  build: <span style="color: #f43f5e;">async</span> () =&gt; <span style="color: #f43f5e;">await</span> Impact.ship({ standard: <span style="color: #00f2fe;">"Exceptional"</span> })</span></div>
+            <div><span class="line-box type-l11" style="color: #e2e8f0;">};<span class="cursor"></span></span></div>
           </div>
         </div>
 
         <div class="footer">
-          <div style="display: flex; gap: 14px;"><span style="color: #00f2fe;">&#10140; git:(main)</span><span>Ln 13, Col 2</span></div>
+          <div style="display: flex; gap: 14px;"><span style="color: #00f2fe;">&#10140; git:(main)</span><span>Ln 11, Col 2</span></div>
           <div style="display: flex; gap: 14px;"><span style="color: #00f2fe;">&#9679; Standalone Engine</span><span style="color: #38bdf8;">TypeScript</span></div>
         </div>
       </div>
