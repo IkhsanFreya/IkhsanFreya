@@ -1,6 +1,6 @@
-<svg fill="none" viewBox="0 0 850 440" width="100%" height="440" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 850 450" width="100%" height="450" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; padding: 12px 25px 0px 25px; box-sizing: border-box; display: flex; justify-content: center; align-items: center;">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; padding: 10px 20px 0px 20px; box-sizing: border-box; display: flex; justify-content: center; align-items: center;">
       
       <style>
         @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;display=swap');
@@ -9,9 +9,9 @@
           width: 100%;
           border-radius: 14px;
           background: linear-gradient(135deg, rgba(7, 13, 26, 0.98) 0%, rgba(10, 17, 36, 1) 60%, rgba(6, 11, 22, 0.98) 100%);
-          border: 1px solid rgba(0, 242, 254, 0.28);
-          box-shadow: 0 20px 45px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(129, 140, 248, 0.12), 0 0 32px rgba(0, 242, 254, 0.15), inset 0 0 25px rgba(0, 242, 254, 0.04);
-          font-family: 'JetBrains Mono', monospace;
+          border: 1px solid rgba(0, 242, 254, 0.35);
+          box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(129, 140, 248, 0.15), 0 0 35px rgba(0, 242, 254, 0.18), inset 0 0 25px rgba(0, 242, 254, 0.05);
+          font-family: 'JetBrains Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
           overflow: hidden;
           position: relative;
         }
@@ -19,17 +19,17 @@
         .scanline {
           position: absolute;
           inset: 0;
-          background: linear-gradient(to bottom, transparent, rgba(0, 242, 254, 0.08), transparent);
+          background: linear-gradient(to bottom, transparent, rgba(0, 242, 254, 0.09), transparent);
           opacity: 0;
-          animation: scan 4.5s ease-in-out infinite;
+          animation: scan 4s ease-in-out infinite;
           pointer-events: none;
           z-index: 10;
         }
 
         @keyframes scan {
           0% { transform: translateY(-100%); opacity: 0; }
-          25% { opacity: 0.6; }
-          75% { opacity: 0.25; }
+          25% { opacity: 0.7; }
+          75% { opacity: 0.3; }
           100% { transform: translateY(100%); opacity: 0; }
         }
 
@@ -38,8 +38,8 @@
           align-items: center;
           justify-content: space-between;
           padding: 12px 18px;
-          border-bottom: 1px solid rgba(0, 242, 254, 0.15);
-          background: rgba(4, 8, 18, 0.75);
+          border-bottom: 1px solid rgba(0, 242, 254, 0.18);
+          background: rgba(4, 8, 18, 0.85);
         }
 
         .dots { display: flex; gap: 7px; }
@@ -48,7 +48,7 @@
         .dot.yellow { background: #ffbd2e; }
         .dot.green { background: #28c840; }
 
-        .title { font-size: 11px; color: rgba(125, 211, 252, 0.75); letter-spacing: 0.2em; font-weight: 600; }
+        .title { font-size: 11px; color: rgba(125, 211, 252, 0.85); letter-spacing: 0.2em; font-weight: 600; }
 
         .status { display: flex; align-items: center; gap: 7px; font-size: 10px; color: #38bdf8; font-weight: 600; letter-spacing: 0.08em; }
         .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #00f2fe; box-shadow: 0 0 10px #00f2fe; animation: pulse 2s infinite; }
@@ -59,27 +59,64 @@
         .gutter { display: flex; flex-direction: column; align-items: flex-end; padding-right: 18px; color: #334155; user-select: none; font-weight: 500; }
         .code { display: flex; flex-direction: column; width: 100%; overflow: hidden; }
         
-        .line { opacity: 0; transform: translateX(-8px); animation: reveal 0.35s ease forwards; white-space: pre; }
-        @keyframes reveal { to { opacity: 1; transform: translateX(0); } }
+        .line-box {
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          vertical-align: bottom;
+        }
 
-        .l1 { animation-delay: 0.2s; }
-        .l2 { animation-delay: 0.5s; }
-        .l3 { animation-delay: 0.8s; }
-        .l4 { animation-delay: 1.0s; }
-        .l5 { animation-delay: 1.2s; }
-        .l6 { animation-delay: 1.4s; }
-        .l7 { animation-delay: 1.6s; }
-        .l8 { animation-delay: 1.8s; }
-        .l9 { animation-delay: 2.0s; }
-        .l10 { animation-delay: 2.2s; }
-        .l11 { animation-delay: 2.4s; }
-        .l12 { animation-delay: 2.6s; }
-        .l13 { animation-delay: 2.8s; }
+        /* 15s TOTAL LOOP CYCLE WITH MECHANICAL TYPING EFFECT */
+        .type-l1  { animation: tL1  15s infinite; }
+        .type-l2  { animation: tL2  15s infinite; }
+        .type-l3  { animation: tL3  15s infinite; }
+        .type-l4  { animation: tL4  15s infinite; }
+        .type-l5  { animation: tL5  15s infinite; }
+        .type-l6  { animation: tL6  15s infinite; }
+        .type-l7  { animation: tL7  15s infinite; }
+        .type-l8  { animation: tL8  15s infinite; }
+        .type-l9  { animation: tL9  15s infinite; }
+        .type-l10 { animation: tL10 15s infinite; }
+        .type-l11 { animation: tL11 15s infinite; }
+        .type-l12 { animation: tL12 15s infinite; }
+        .type-l13 { animation: tL13 15s infinite; }
 
-        .cursor { display: inline-block; width: 8px; height: 14px; background-color: #00f2fe; vertical-align: middle; margin-left: 5px; opacity: 0; animation: blink 1s step-end infinite; animation-delay: 3.2s; box-shadow: 0 0 8px #00f2fe; }
+        @keyframes tL1  { 0% { max-width: 0; opacity: 1; } 5% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL2  { 0%, 5% { max-width: 0; opacity: 1; } 10% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL3  { 0%, 10% { max-width: 0; opacity: 1; } 15% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL4  { 0%, 15% { max-width: 0; opacity: 1; } 22% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL5  { 0%, 22% { max-width: 0; opacity: 1; } 29% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL6  { 0%, 29% { max-width: 0; opacity: 1; } 36% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL7  { 0%, 36% { max-width: 0; opacity: 1; } 43% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL8  { 0%, 43% { max-width: 0; opacity: 1; } 50% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL9  { 0%, 50% { max-width: 0; opacity: 1; } 57% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL10 { 0%, 57% { max-width: 0; opacity: 1; } 64% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL11 { 0%, 64% { max-width: 0; opacity: 1; } 71% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL12 { 0%, 71% { max-width: 0; opacity: 1; } 78% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+        @keyframes tL13 { 0%, 78% { max-width: 0; opacity: 1; } 84% { max-width: 100%; } 92% { max-width: 100%; opacity: 1; } 95% { opacity: 0; } 100% { max-width: 0; opacity: 0; } }
+
+        .cursor {
+          display: inline-block;
+          width: 8px;
+          height: 14px;
+          background-color: #00f2fe;
+          vertical-align: middle;
+          margin-left: 5px;
+          animation: blink 0.9s step-end infinite;
+          box-shadow: 0 0 8px #00f2fe;
+        }
         @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 
-        .footer { display: flex; align-items: center; justify-content: space-between; padding: 8px 18px; border-top: 1px solid rgba(0, 242, 254, 0.12); background: rgba(0, 242, 254, 0.03); color: #64748b; font-size: 11px; }
+        .footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 8px 18px;
+          border-top: 1px solid rgba(0, 242, 254, 0.15);
+          background: rgba(0, 242, 254, 0.04);
+          color: #64748b;
+          font-size: 11px;
+        }
       </style>
 
       <div class="window">
@@ -99,19 +136,19 @@
           </div>
           
           <div class="code">
-            <div class="line l1" style="color: #c084fc;"><span style="color: #f43f5e;">import</span> { FullStack, SpatialWebAR, Multimedia2D } <span style="color: #f43f5e;">from</span> <span style="color: #38bdf8;">"@ikhsan/engineering"</span>;</div>
-            <div class="line l2" style="color: #e2e8f0;"><span style="color: #f43f5e;">export const</span> <span style="color: #facc15;">developer</span>: Engineer = {</div>
-            <div class="line l3" style="color: #e2e8f0;">  name: <span style="color: #00f2fe;">"Muhammad Ikhsan Fauzi"</span>,</div>
-            <div class="line l4" style="color: #e2e8f0;">  role: <span style="color: #a78bfa;">"Full-Stack Developer • UI/UX Designer • 2D Animator"</span>,</div>
-            <div class="line l5" style="color: #e2e8f0;">  linkedin: <span style="color: #38bdf8;">"linkedin.com/in/m-ikhsan-fauzi-0364b9319"</span>,</div>
-            <div class="line l6" style="color: #e2e8f0;">  frontend: [<span style="color: #7dd3fc;">"React"</span>, <span style="color: #7dd3fc;">"Next.js"</span>, <span style="color: #7dd3fc;">"Vue 3"</span>, <span style="color: #7dd3fc;">"Nuxt 4"</span>, <span style="color: #7dd3fc;">"Tailwind"</span>, <span style="color: #7dd3fc;">"Vite"</span>],</div>
-            <div class="line l7" style="color: #e2e8f0;">  backend: [<span style="color: #f472b6;">"Laravel"</span>, <span style="color: #f472b6;">"Node.js"</span>, <span style="color: #f472b6;">"Express"</span>, <span style="color: #f472b6;">"FastAPI"</span>, <span style="color: #f472b6;">"MySQL"</span>, <span style="color: #f472b6;">"Prisma"</span>],</div>
-            <div class="line l8" style="color: #e2e8f0;">  creative: [<span style="color: #fde68a;">"After Effects 2D Animation"</span>, <span style="color: #fde68a;">"Figma UI/UX"</span>, <span style="color: #fde68a;">"Photoshop"</span>],</div>
-            <div class="line l9" style="color: #e2e8f0;">  systems: [<span style="color: #34d399;">"MikroTik MTCNA (#2505NA5241)"</span>, <span style="color: #34d399;">"Red Hat Linux Admin"</span>],</div>
-            <div class="line l10" style="color: #e2e8f0;">  craft: [<span style="color: #00f2fe;">"Desktop AI (NVENC)"</span>, <span style="color: #00f2fe;">"Spatial WebAR (Three.js)"</span>, <span style="color: #00f2fe;">"3D OpenGL"</span>],</div>
-            <div class="line l11" style="color: #94a3b8;">  philosophy: <span style="color: #fde68a;">"Elegance in Architecture • Precision in Execution"</span>,</div>
-            <div class="line l12" style="color: #e2e8f0;">  build: <span style="color: #f43f5e;">async</span> () =&gt; <span style="color: #f43f5e;">await</span> Impact.create({ standard: <span style="color: #00f2fe;">"Exceptional"</span> })</div>
-            <div class="line l13" style="color: #e2e8f0;">};<span class="cursor"></span></div>
+            <div><span class="line-box type-l1" style="color: #c084fc;"><span style="color: #f43f5e;">import</span> { FullStack, RobloxStudio, SpatialWebAR } <span style="color: #f43f5e;">from</span> <span style="color: #38bdf8;">"@ikhsan/craft"</span>;</span></div>
+            <div><span class="line-box type-l2" style="color: #e2e8f0;"><span style="color: #f43f5e;">export const</span> <span style="color: #facc15;">developer</span>: Engineer = {</span></div>
+            <div><span class="line-box type-l3" style="color: #e2e8f0;">  name: <span style="color: #00f2fe;">"Muhammad Ikhsan Fauzi"</span>,</span></div>
+            <div><span class="line-box type-l4" style="color: #e2e8f0;">  role: <span style="color: #a78bfa;">"Roblox Game Dev • Full-Stack • UI/UX &amp; 2D Animator"</span>,</span></div>
+            <div><span class="line-box type-l5" style="color: #e2e8f0;">  gamedev: [<span style="color: #fca5a5;">"Roblox Studio (Luau)"</span>, <span style="color: #fde68a;">"PyOpenGL 3D"</span>, <span style="color: #fde68a;">"Unity &amp; Blender"</span>],</span></div>
+            <div><span class="line-box type-l6" style="color: #e2e8f0;">  frontend: [<span style="color: #7dd3fc;">"React"</span>, <span style="color: #7dd3fc;">"Next.js"</span>, <span style="color: #7dd3fc;">"Vue 3"</span>, <span style="color: #7dd3fc;">"Nuxt 4"</span>, <span style="color: #7dd3fc;">"Tailwind"</span>],</span></div>
+            <div><span class="line-box type-l7" style="color: #e2e8f0;">  backend: [<span style="color: #f472b6;">"Laravel"</span>, <span style="color: #f472b6;">"Node.js"</span>, <span style="color: #f472b6;">"Express"</span>, <span style="color: #f472b6;">"FastAPI"</span>, <span style="color: #f472b6;">"MySQL"</span>],</span></div>
+            <div><span class="line-box type-l8" style="color: #e2e8f0;">  creative: [<span style="color: #f472b6;">"After Effects 2D Animation"</span>, <span style="color: #f472b6;">"Figma UI/UX"</span>, <span style="color: #f472b6;">"Photoshop"</span>],</span></div>
+            <div><span class="line-box type-l9" style="color: #e2e8f0;">  systems: [<span style="color: #34d399;">"MikroTik MTCNA (#2505NA5241)"</span>, <span style="color: #34d399;">"Red Hat Linux Admin"</span>],</span></div>
+            <div><span class="line-box type-l10" style="color: #e2e8f0;">  craft: [<span style="color: #00f2fe;">"Desktop AI (NVENC)"</span>, <span style="color: #00f2fe;">"Spatial WebAR (Three.js)"</span>, <span style="color: #00f2fe;">"IoT Arduino"</span>],</span></div>
+            <div><span class="line-box type-l11" style="color: #94a3b8;">  philosophy: <span style="color: #fde68a;">"Elegance in Architecture • Precision in Execution"</span>,</span></div>
+            <div><span class="line-box type-l12" style="color: #e2e8f0;">  build: <span style="color: #f43f5e;">async</span> () =&gt; <span style="color: #f43f5e;">await</span> Impact.create({ standard: <span style="color: #00f2fe;">"Exceptional"</span> })</span></div>
+            <div><span class="line-box type-l13" style="color: #e2e8f0;">};<span class="cursor"></span></span></div>
           </div>
         </div>
 
