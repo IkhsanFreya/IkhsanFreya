@@ -1,12 +1,12 @@
 <div align="center">
 
-  <!-- HEADER UTAMA (LOCALLY HOSTED SVG) -->
+  <!-- HEADER BANNER (LOCALLY HOSTED SVG) -->
   <div>
-    <img src="./header.svg?v=4" alt="Muhammad Ikhsan Fauzi Banner" width="850" />
+    <img src="./header.svg?v=5" alt="Muhammad Ikhsan Fauzi Banner" width="850" />
   </div>
   <br/>
 
-  <!-- METRIK PAMERAN: STARS, VIEWS, LINKEDIN & PORTFOLIO -->
+  <!-- METRIK: STARS, VIEWS, LINKEDIN & PORTFOLIO -->
   <div>
     <a href="https://github.com/IkhsanFreya">
       <img src="https://img.shields.io/github/stars/IkhsanFreya?style=for-the-badge&color=f59e0b&labelColor=020c09&logo=github&logoColor=f59e0b" alt="GitHub Stars" />
@@ -21,9 +21,9 @@
   </div>
   <br/>
 
-  <!-- TERMINAL KODE (LOCALLY HOSTED SVG) -->
+  <!-- TERMINAL KODE DENGAN ANIMASI LOOPING MENGETIK -->
   <div>
-    <img src="./terminal.svg?v=4" alt="Animated Developer Terminal" width="850" />
+    <img src="./terminal.svg?v=5" alt="Animated Developer Terminal" width="850" />
   </div>
 
 </div>
@@ -34,16 +34,22 @@
 
 <p align="center">
   <b>Programming Languages</b><br/>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,python,php,cs,cpp,html,css&theme=dark" alt="Languages" /></a>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,python,php,cs,cpp,lua,html,css&theme=dark" alt="Languages" /></a>
 </p>
 
 <p align="center">
-  <b>Frontend, UI/UX &amp; Spatial Computing</b><br/>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nextjs,vue,tailwind,bootstrap,vite,threejs,figma&theme=dark" alt="Frontend" /></a>
+  <b>Game Development, 3D &amp; Spatial Computing</b><br/>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=lua,unity,blender,threejs,arduino&theme=dark" alt="Game Dev and 3D" /></a><br/>
+  <sub><b>Roblox Studio:</b> Luau Engine &bull; OOP Game Frameworks &bull; Client-Server Networking &bull; 3D Game Mechanics</sub>
 </p>
 
 <p align="center">
-  <b>Design, 2D Animation &amp; Video Editing</b><br/>
+  <b>Frontend Architecture &amp; UI/UX</b><br/>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nextjs,vue,tailwind,bootstrap,vite,figma&theme=dark" alt="Frontend" /></a>
+</p>
+
+<p align="center">
+  <b>Creative Suite, 2D Animation &amp; Video</b><br/>
   <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ps,ai,ae,pr,canva&theme=dark" alt="Creative" /></a>
 </p>
 
@@ -53,8 +59,8 @@
 </p>
 
 <p align="center">
-  <b>Systems, Networking, Cloud &amp; 3D Game</b><br/>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=linux,gcp,windows,unity,blender,arduino,docker,git,github,postman&theme=dark" alt="Systems" /></a>
+  <b>Systems, Networking &amp; Infrastructure</b><br/>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=linux,gcp,windows,docker,git,github,postman&theme=dark" alt="Systems" /></a>
 </p>
 
 ---
@@ -148,6 +154,6 @@
 
 <div align="center">
   <p align="center">
-    <sub>Muhammad Ikhsan Fauzi &bull; &copy; 2026 &bull; Software Engineer &bull; Full-Stack &bull; UI/UX &bull; 2D Animation</sub>
+    <sub>Muhammad Ikhsan Fauzi &bull; &copy; 2026 &bull; Software Engineer &bull; Roblox Game Dev &bull; Full-Stack &bull; UI/UX &bull; 2D Animation</sub>
   </p>
 </div>
