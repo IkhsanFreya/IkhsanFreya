@@ -1,4 +1,4 @@
-<svg fill="none" viewBox="0 0 850 190" width="100%" height="190" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 850 180" width="100%" height="180" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; font-family: sans-serif; position: relative;">
       
@@ -30,39 +30,33 @@
         }
 
         .subtitle {
-          font-family: 'Syne', sans-serif;
+          font-family: 'JetBrains Mono', monospace;
           color: #94a3b8;
-          font-size: 15px;
+          font-size: 14px;
           margin-top: 8px;
-          font-weight: 700;
+          font-weight: 600;
           letter-spacing: 0.5px;
         }
 
         .sparkle {
           display: inline-block;
           color: #00f2fe;
-          animation: float 3s ease-in-out infinite;
-        }
-
-        @keyframes float {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-4px); }
         }
 
         .badges-wrapper {
           display: flex;
           flex-wrap: wrap;
-          gap: 12px;
+          gap: 10px;
           justify-content: center;
-          margin-top: 20px;
+          margin-top: 18px;
           font-family: 'JetBrains Mono', monospace;
         }
 
         .cyber-badge {
           display: inline-flex;
           align-items: center;
-          gap: 8px;
-          padding: 6px 14px;
+          gap: 7px;
+          padding: 5px 12px;
           border-radius: 4px;
           font-size: 12px;
           font-weight: 500;
@@ -71,16 +65,16 @@
           color: #7dd3fc;
         }
 
-        .cyber-badge.gold {
-          background: rgba(245, 158, 11, 0.05);
-          border-color: rgba(245, 158, 11, 0.3);
-          color: #fde68a;
-        }
-
         .cyber-badge.purple {
           background: rgba(168, 85, 247, 0.05);
           border-color: rgba(168, 85, 247, 0.3);
           color: #d8b4fe;
+        }
+
+        .cyber-badge.gold {
+          background: rgba(245, 158, 11, 0.05);
+          border-color: rgba(245, 158, 11, 0.3);
+          color: #fde68a;
         }
 
         .cyber-badge.emerald {
@@ -93,21 +87,21 @@
       <div class="header-container">
         <h1 class="name">Muhammad Ikhsan Fauzi</h1>
         <div class="subtitle">
-          <span class="sparkle">&#10022;</span> Building Modern Digital Systems &amp; Spatial Computing Experiences <span class="sparkle">&#10022;</span>
+          <span class="sparkle">&#10022;</span> Software Engineer &#8226; Full-Stack Developer &#8226; UI/UX &amp; 2D Animator <span class="sparkle">&#10022;</span>
         </div>
 
         <div class="badges-wrapper">
           <div class="cyber-badge">
-            <span>&#123;&#125;</span> Teknik Informatika S1 (IPK 3.65)
+            <span>&#123;&#125;</span> Full-Stack Developer
           </div>
           <div class="cyber-badge gold">
-            <span>&#9813;</span> Ketua Angkatan 2023 &#8226; Staff HMIF
+            <span>&#9998;</span> UI/UX &amp; 2D Animation
           </div>
           <div class="cyber-badge purple">
-            <span>&#9881;</span> MikroTik MTCNA &#8226; Red Hat Linux
+            <span>&#9881;</span> MikroTik MTCNA &#8226; Linux
           </div>
           <div class="cyber-badge emerald">
-            <span>&#9678;</span> Tasikmalaya / Depok, Indonesia
+            <span>&#9678;</span> Tasikmalaya / Depok, ID
           </div>
         </div>
       </div>
