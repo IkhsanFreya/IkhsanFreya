@@ -2,7 +2,7 @@
 
   <!-- HEADER UTAMA (LOCALLY HOSTED SVG) -->
   <div>
-    <img src="./header.svg" alt="Muhammad Ikhsan Fauzi Banner" width="850" />
+    <img src="./header.svg?v=2" alt="Muhammad Ikhsan Fauzi Banner" width="850" />
   </div>
   <br/>
 
