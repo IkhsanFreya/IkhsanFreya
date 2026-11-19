@@ -1,0 +1,121 @@
+<svg fill="none" viewBox="0 0 850 210" width="100%" height="210" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; font-family: sans-serif; position: relative;">
+      
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap');
+
+        .header-container {
+          position: relative;
+          z-index: 2;
+          width: 100%;
+        }
+
+        .name {
+          font-family: 'Syne', sans-serif;
+          font-size: 46px;
+          font-weight: 800;
+          margin: 0;
+          letter-spacing: -0.5px;
+          background: linear-gradient(135deg, #00f2fe 0%, #4facfe 30%, #818cf8 65%, #c084fc 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          filter: drop-shadow(0 0 16px rgba(0, 242, 254, 0.45));
+          animation: royalGlow 3.5s ease-in-out infinite;
+        }
+
+        @keyframes royalGlow {
+          0%, 100% { filter: drop-shadow(0 0 14px rgba(0, 242, 254, 0.4)); }
+          50% { filter: drop-shadow(0 0 28px rgba(168, 85, 247, 0.65)); }
+        }
+
+        .subtitle {
+          font-family: 'JetBrains Mono', monospace;
+          color: #94a3b8;
+          font-size: 14px;
+          margin-top: 10px;
+          font-weight: 600;
+          letter-spacing: 0.8px;
+        }
+
+        .sparkle {
+          display: inline-block;
+          color: #00f2fe;
+          animation: pulseSparkle 2s ease-in-out infinite;
+        }
+
+        @keyframes pulseSparkle {
+          0%, 100% { transform: scale(1); opacity: 0.8; }
+          50% { transform: scale(1.25); opacity: 1; filter: drop-shadow(0 0 6px #00f2fe); }
+        }
+
+        .badges-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          justify-content: center;
+          margin-top: 18px;
+          font-family: 'JetBrains Mono', monospace;
+        }
+
+        .royal-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          padding: 5px 12px;
+          border-radius: 6px;
+          font-size: 12px;
+          font-weight: 600;
+          background: rgba(0, 242, 254, 0.06);
+          border: 1px solid rgba(0, 242, 254, 0.35);
+          color: #7dd3fc;
+          box-shadow: 0 0 10px rgba(0, 242, 254, 0.1);
+        }
+
+        .royal-badge.purple {
+          background: rgba(168, 85, 247, 0.06);
+          border-color: rgba(168, 85, 247, 0.35);
+          color: #d8b4fe;
+          box-shadow: 0 0 10px rgba(168, 85, 247, 0.1);
+        }
+
+        .royal-badge.gold {
+          background: rgba(245, 158, 11, 0.06);
+          border-color: rgba(245, 158, 11, 0.35);
+          color: #fde68a;
+          box-shadow: 0 0 10px rgba(245, 158, 11, 0.1);
+        }
+
+        .royal-badge.emerald {
+          background: rgba(16, 185, 129, 0.06);
+          border-color: rgba(16, 185, 129, 0.35);
+          color: #a7f3d0;
+          box-shadow: 0 0 10px rgba(16, 185, 129, 0.1);
+        }
+      </style>
+
+      <div class="header-container">
+        <h1 class="name">Muhammad Ikhsan Fauzi</h1>
+        <div class="subtitle">
+          <span class="sparkle">&#10022;</span> Software Engineer &bull; Full-Stack Architect &bull; Spatial Computing (WebAR) <span class="sparkle">&#10022;</span>
+        </div>
+
+        <div class="badges-wrapper">
+          <div class="royal-badge">
+            <span>&#123;&#125;</span> Teknik Informatika S1 (IPK 3.65)
+          </div>
+          <div class="royal-badge gold">
+            <span>&#9813;</span> Ketua Angkatan 2023 &bull; Staff HMIF
+          </div>
+          <div class="royal-badge purple">
+            <span>&#9881;</span> MikroTik MTCNA &bull; Red Hat Linux
+          </div>
+          <div class="royal-badge emerald">
+            <span>&#9678;</span> Tasikmalaya &amp; Depok, Indonesia
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>
