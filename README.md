@@ -1,8 +1,13 @@
 <div align="center">
 
-  <!-- HEADER BANNER (LOCALLY HOSTED SVG) -->
+  <!-- AESTHETIC ANIME DEVELOPER WORKSTATION BANNER -->
   <div>
-    <img src="./header.svg?v=5" alt="Muhammad Ikhsan Fauzi Banner" width="850" />
+    <img src="./banner.gif" alt="Aesthetic Anime Developer Workstation" width="850" style="border-radius: 12px; margin-bottom: 8px;" />
+  </div>
+
+  <!-- ROYAL HEADER BANNER -->
+  <div>
+    <img src="./header.svg?v=6" alt="Muhammad Ikhsan Fauzi Banner" width="850" />
   </div>
   <br/>
 
@@ -23,7 +28,7 @@
 
   <!-- TERMINAL KODE DENGAN ANIMASI LOOPING MENGETIK -->
   <div>
-    <img src="./terminal.svg?v=5" alt="Animated Developer Terminal" width="850" />
+    <img src="./terminal.svg?v=6" alt="Animated Developer Terminal" width="850" />
   </div>
 
 </div>
@@ -50,7 +55,8 @@
 
 <p align="center">
   <b>Creative Suite, 2D Animation &amp; Video</b><br/>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ps,ai,ae,pr,canva&theme=dark" alt="Creative" /></a>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ae,pr,ps,ai,canva&theme=dark" alt="Creative" /></a><br/>
+  <sub><b>Motion &amp; Visuals:</b> After Effects 2D Animation &bull; Premiere Pro &bull; Photoshop &bull; Illustrator &bull; Figma</sub>
 </p>
 
 <p align="center">
@@ -60,7 +66,8 @@
 
 <p align="center">
   <b>Systems, Networking &amp; Infrastructure</b><br/>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=linux,gcp,windows,docker,git,github,postman&theme=dark" alt="Systems" /></a>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=linux,gcp,windows,docker,git,github,postman&theme=dark" alt="Systems" /></a><br/>
+  <sub><b>Certifications:</b> MikroTik Certified Network Associate (MTCNA #2505NA5241) &bull; Red Hat System Administration</sub>
 </p>
 
 ---
@@ -80,7 +87,7 @@
 
 ---
 
-### ✦ Flagship Projects
+### ✦ Flagship Engineering Systems
 
 <table>
   <tr>
