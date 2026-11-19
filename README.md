@@ -2,7 +2,7 @@
 
   <!-- HEADER UTAMA (LOCALLY HOSTED SVG) -->
   <div>
-    <img src="./header.svg?v=3" alt="Muhammad Ikhsan Fauzi Banner" width="850" />
+    <img src="./header.svg?v=4" alt="Muhammad Ikhsan Fauzi Banner" width="850" />
   </div>
   <br/>
 
@@ -12,7 +12,7 @@
       <img src="https://img.shields.io/github/stars/IkhsanFreya?style=for-the-badge&color=f59e0b&labelColor=020c09&logo=github&logoColor=f59e0b" alt="GitHub Stars" />
     </a>
     <img src="https://komarev.com/ghpvc/?username=IkhsanFreya&color=00f2fe&style=for-the-badge&labelColor=020c09&label=PROFILE+VIEWS" alt="Profile Views" />
-    <a href="https://www.linkedin.com/in/m-ikhsan-fauzi">
+    <a href="https://www.linkedin.com/in/m-ikhsan-fauzi-0364b9319">
       <img src="https://img.shields.io/badge/LINKEDIN-m--ikhsan--fauzi-0a66c2?style=for-the-badge&labelColor=020c09&logo=linkedin&logoColor=white" alt="LinkedIn" />
     </a>
     <a href="https://ikhsanfreya.github.io">
@@ -23,23 +23,28 @@
 
   <!-- TERMINAL KODE (LOCALLY HOSTED SVG) -->
   <div>
-    <img src="./terminal.svg?v=3" alt="Animated Developer Terminal" width="850" />
+    <img src="./terminal.svg?v=4" alt="Animated Developer Terminal" width="850" />
   </div>
 
 </div>
 
 ---
 
-### ✦ Tech Stack &amp; Tools
+### ✦ Tech Stack &amp; Creative Tools
 
 <p align="center">
   <b>Programming Languages</b><br/>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,python,php,cs,cpp&theme=dark" alt="Languages" /></a>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,python,php,cs,cpp,html,css&theme=dark" alt="Languages" /></a>
 </p>
 
 <p align="center">
-  <b>Frontend, UI/UX &amp; Spatial</b><br/>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nextjs,vue,tailwind,bootstrap,vite,html,css,threejs,figma&theme=dark" alt="Frontend" /></a>
+  <b>Frontend, UI/UX &amp; Spatial Computing</b><br/>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nextjs,vue,tailwind,bootstrap,vite,threejs,figma&theme=dark" alt="Frontend" /></a>
+</p>
+
+<p align="center">
+  <b>Design, 2D Animation &amp; Video Editing</b><br/>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ps,ai,ae,pr,canva&theme=dark" alt="Creative" /></a>
 </p>
 
 <p align="center">
@@ -48,8 +53,8 @@
 </p>
 
 <p align="center">
-  <b>Systems, 3D Game &amp; Multimedia</b><br/>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=linux,windows,unity,blender,arduino,docker,git,github,postman&theme=dark" alt="Systems" /></a>
+  <b>Systems, Networking, Cloud &amp; 3D Game</b><br/>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=linux,gcp,windows,unity,blender,arduino,docker,git,github,postman&theme=dark" alt="Systems" /></a>
 </p>
 
 ---
