@@ -11,21 +11,6 @@
   </div>
   <br/>
 
-  <!-- METRIK: STARS, VIEWS, LINKEDIN & PORTFOLIO -->
-  <div>
-    <a href="https://github.com/IkhsanFreya">
-      <img src="https://img.shields.io/github/stars/IkhsanFreya?style=for-the-badge&color=f59e0b&labelColor=020c09&logo=github&logoColor=f59e0b" alt="GitHub Stars" />
-    </a>
-    <img src="https://komarev.com/ghpvc/?username=IkhsanFreya&color=00f2fe&style=for-the-badge&labelColor=020c09&label=PROFILE+VIEWS" alt="Profile Views" />
-    <a href="https://www.linkedin.com/in/m-ikhsan-fauzi-0364b9319">
-      <img src="https://img.shields.io/badge/LINKEDIN-m--ikhsan--fauzi-0a66c2?style=for-the-badge&labelColor=020c09&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-    <a href="https://ikhsanfreya.github.io">
-      <img src="https://img.shields.io/badge/LIVE_PORTFOLIO-ikhsanfreya.github.io-3b82f6?style=for-the-badge&labelColor=020c09&logo=googlechrome&logoColor=white" alt="Portfolio" />
-    </a>
-  </div>
-  <br/>
-
   <!-- TERMINAL KODE DENGAN ANIMASI LOOPING MENGETIK -->
   <div>
     <img src="./terminal.svg?v=6" alt="Animated Developer Terminal" width="850" />
@@ -94,10 +79,10 @@
     <td width="50%" valign="top">
       <div align="left">
         <img src="https://img.shields.io/badge/DESKTOP_AI-HARDWARE_NVENC-00f2fe?style=flat-square&logo=windows11&logoColor=black" alt="Badge" />
-        <h3><a href="https://github.com/IkhsanFreya/calclip">CalClip.IN 2.0</a></h3>
-        <p>Aplikasi desktop pemotong video otomatis 9:16 (TikTok, Reels, Shorts) dengan akselerasi GPU NVIDIA NVENC, Faster-Whisper, timeline trim slider, dan deteksi wajah OpenCV.</p>
-        <sub><b>Stack:</b> Python 3.12 &bull; React &bull; TypeScript &bull; C# Launcher &bull; WebView2 &bull; FFmpeg</sub><br/>
-        <sub><b>Unduh:</b> <a href="https://github.com/IkhsanFreya/calclip/releases/tag/v2.0.0">CalClip-v2.0-Windows-Setup.exe</a></sub>
+        <h3><a href="https://github.com/IkhsanFreya/calclip">CalClip.IN 2.1</a></h3>
+        <p>Aplikasi desktop pemotong video otomatis 9:16 (TikTok, Reels, Shorts) &amp; Motion AI dengan akselerasi GPU NVIDIA NVENC, Faster-Whisper, Filter Kalman 2D, dan deteksi wajah YuNet.</p>
+        <sub><b>Stack:</b> Python 3.12 &bull; React &bull; TypeScript &bull; C# Launcher &bull; Faster-Whisper &bull; YuNet &bull; FFmpeg</sub><br/>
+        <sub><b>Unduh:</b> <a href="https://github.com/IkhsanFreya/calclip/releases/tag/v2.1.0">CalClip-v2.1-Windows-Setup.exe</a></sub>
       </div>
     </td>
     <td width="50%" valign="top">
