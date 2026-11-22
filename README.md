@@ -22,38 +22,9 @@
 
 ### ✦ Tech Stack &amp; Creative Tools
 
-<p align="center">
-  <b>Programming Languages</b><br/>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,python,php,cs,cpp,lua,html,css&theme=dark" alt="Languages" /></a>
-</p>
-
-<p align="center">
-  <b>Game Development, 3D &amp; Spatial Computing</b><br/>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=lua,unity,blender,threejs,arduino&theme=dark" alt="Game Dev and 3D" /></a><br/>
-  <sub><b>Roblox Studio:</b> Luau Engine &bull; OOP Game Frameworks &bull; Client-Server Networking &bull; 3D Game Mechanics</sub>
-</p>
-
-<p align="center">
-  <b>Frontend Architecture &amp; UI/UX</b><br/>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nextjs,vue,tailwind,bootstrap,vite,figma&theme=dark" alt="Frontend" /></a>
-</p>
-
-<p align="center">
-  <b>Creative Suite, 2D Animation &amp; Video</b><br/>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ae,pr,ps,ai,canva&theme=dark" alt="Creative" /></a><br/>
-  <sub><b>Motion &amp; Visuals:</b> After Effects 2D Animation &bull; Premiere Pro &bull; Photoshop &bull; Illustrator &bull; Figma</sub>
-</p>
-
-<p align="center">
-  <b>Backend, Machine Learning &amp; Database</b><br/>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=laravel,nodejs,express,fastapi,pytorch,mysql,sqlite,prisma&theme=dark" alt="Backend" /></a>
-</p>
-
-<p align="center">
-  <b>Systems, Networking &amp; Infrastructure</b><br/>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=linux,gcp,windows,docker,git,github,postman&theme=dark" alt="Systems" /></a><br/>
-  <sub><b>Certifications:</b> MikroTik Certified Network Associate (MTCNA #2505NA5241) &bull; Red Hat System Administration</sub>
-</p>
+<div align="center">
+  <img src="./techstack.svg?v=1" alt="Tech Stack &amp; Creative Arsenal" width="850" />
+</div>
 
 ---
 
