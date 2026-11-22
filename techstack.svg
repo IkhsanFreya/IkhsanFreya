@@ -1,432 +1,864 @@
-<svg fill="none" viewBox="0 0 850 540" width="100%" height="540" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 850 445" width="100%" height="445" xmlns="http://www.w3.org/2000/svg">
+
   <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; padding: 4px; box-sizing: border-box; display: flex; justify-content: center; align-items: center; background: transparent;">
+
+    <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; padding: 2px 4px; box-sizing: border-box; display: flex; justify-content: center; align-items: center; background: transparent;">
+
       <style>
+
         @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap');
+
+
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
+
+
         @keyframes scanline {
+
           0% { transform: translateY(-100%); opacity: 0; }
+
           40% { opacity: 0.8; }
+
           70% { opacity: 0.8; }
+
           100% { transform: translateY(540px); opacity: 0; }
+
         }
+
+
 
         @keyframes laserSweep {
+
           0% { left: -30%; opacity: 0; }
+
           20% { opacity: 1; }
+
           80% { opacity: 1; }
+
           100% { left: 110%; opacity: 0; }
+
         }
+
+
 
         @keyframes pulseGlow {
+
           0%, 100% { box-shadow: 0 0 12px rgba(0, 242, 254, 0.25), inset 0 0 10px rgba(0, 242, 254, 0.08); border-color: rgba(0, 242, 254, 0.35); }
+
           50% { box-shadow: 0 0 24px rgba(0, 242, 254, 0.5), inset 0 0 18px rgba(0, 242, 254, 0.2); border-color: rgba(0, 242, 254, 0.7); }
+
         }
+
+
 
         @keyframes marqueeTrack {
+
           0% { transform: translateX(0); }
+
           100% { transform: translateX(-50%); }
+
         }
+
+
 
         @keyframes badgeFloat {
+
           0%, 100% { transform: translateY(0px); }
+
           50% { transform: translateY(-3px); }
+
         }
+
+
 
         .hud-container {
+
           width: 100%;
+
           height: 100%;
+
           border-radius: 18px;
+
           background: linear-gradient(145deg, rgba(8, 14, 30, 0.98) 0%, rgba(13, 23, 48, 0.96) 50%, rgba(6, 11, 24, 0.98) 100%);
+
           border: 1px solid rgba(0, 242, 254, 0.35);
+
           animation: pulseGlow 6s ease-in-out infinite;
+
           position: relative;
+
           overflow: hidden;
-          padding: 20px 24px 18px 24px;
+
+          padding: 14px 18px 12px 18px;
+
           display: flex;
+
           flex-direction: column;
+
           font-family: 'Plus Jakarta Sans', sans-serif;
+
           color: #e2e8f0;
+
         }
+
+
 
         /* Laser Sweep Line */
+
         .laser-beam {
+
           position: absolute;
+
           top: 0;
+
           width: 25%;
+
           height: 2px;
+
           background: linear-gradient(90deg, transparent, #00f2fe, #38bdf8, transparent);
+
           box-shadow: 0 0 12px #00f2fe, 0 0 20px #00f2fe;
+
           animation: laserSweep 4s ease-in-out infinite;
+
         }
+
+
 
         /* Top HUD Bar */
+
         .hud-topbar {
+
           display: flex;
+
           justify-content: space-between;
+
           align-items: center;
+
           padding-bottom: 14px;
+
           border-bottom: 1px solid rgba(0, 242, 254, 0.18);
+
           margin-bottom: 14px;
+
         }
+
+
 
         .hud-title-box {
+
           display: flex;
+
           align-items: center;
+
           gap: 10px;
+
         }
+
+
 
         .hud-icon-gem {
+
           width: 10px;
+
           height: 10px;
+
           background: #00f2fe;
+
           transform: rotate(45deg);
+
           box-shadow: 0 0 10px #00f2fe;
+
         }
+
+
 
         .hud-title {
+
           font-family: 'Syne', sans-serif;
+
           font-size: 15px;
+
           font-weight: 800;
+
           letter-spacing: 1.5px;
+
           text-transform: uppercase;
+
           background: linear-gradient(90deg, #ffffff 0%, #38bdf8 60%, #00f2fe 100%);
+
           -webkit-background-clip: text;
+
           -webkit-text-fill-color: transparent;
+
         }
+
+
 
         .hud-status-chip {
+
           display: flex;
+
           align-items: center;
+
           gap: 7px;
+
           font-family: 'JetBrains Mono', monospace;
+
           font-size: 11px;
+
           font-weight: 600;
+
           color: #38bdf8;
+
           background: rgba(0, 242, 254, 0.08);
+
           padding: 4px 12px;
+
           border-radius: 20px;
+
           border: 1px solid rgba(0, 242, 254, 0.25);
+
         }
+
+
 
         .live-dot {
+
           width: 7px;
+
           height: 7px;
+
           border-radius: 50%;
+
           background: #00f2fe;
+
           box-shadow: 0 0 8px #00f2fe;
+
           display: inline-block;
+
         }
+
+
 
         /* 6 Grid Cards */
+
         .grid-cards {
+
           display: grid;
+
           grid-template-columns: repeat(3, 1fr);
+
           gap: 12px;
+
           margin-bottom: 14px;
+
           flex: 1;
+
         }
+
+
 
         .tech-card {
+
           background: rgba(15, 23, 42, 0.65);
+
           border: 1px solid rgba(148, 163, 184, 0.12);
+
           border-radius: 12px;
+
           padding: 12px 14px;
+
           display: flex;
+
           flex-direction: column;
+
           gap: 8px;
+
           position: relative;
+
           backdrop-filter: blur(8px);
+
           transition: border-color 0.3s;
+
         }
+
+
 
         .tech-card:hover {
+
           border-color: rgba(0, 242, 254, 0.45);
+
         }
+
+
 
         .card-header {
+
           display: flex;
+
           align-items: center;
+
           gap: 8px;
+
         }
+
+
 
         .card-badge-icon {
+
           font-size: 13px;
+
         }
+
+
 
         .card-label {
+
           font-family: 'JetBrains Mono', monospace;
+
           font-size: 11px;
+
           font-weight: 700;
+
           letter-spacing: 0.8px;
+
           text-transform: uppercase;
+
           color: #94a3b8;
+
         }
+
+
 
         .card-pills {
+
           display: flex;
+
           flex-wrap: wrap;
-          gap: 5px;
+
+          gap: 4px;
+
           align-items: center;
+
         }
+
+
 
         .tech-pill {
+
           font-family: 'JetBrains Mono', monospace;
+
           font-size: 11px;
+
           font-weight: 600;
-          padding: 3px 8px;
+
+          padding: 2px 7px;
+
           border-radius: 6px;
+
           display: inline-flex;
+
           align-items: center;
+
           gap: 4px;
+
           background: rgba(30, 41, 59, 0.8);
+
           border: 1px solid rgba(148, 163, 184, 0.18);
+
           color: #cbd5e1;
+
         }
+
+
 
         .pill-highlight-cyan {
+
           background: rgba(0, 242, 254, 0.12);
+
           border-color: rgba(0, 242, 254, 0.35);
+
           color: #38bdf8;
+
         }
+
+
 
         .pill-highlight-emerald {
+
           background: rgba(16, 185, 129, 0.12);
+
           border-color: rgba(16, 185, 129, 0.35);
+
           color: #34d399;
+
         }
+
+
 
         .pill-highlight-purple {
+
           background: rgba(168, 85, 247, 0.12);
+
           border-color: rgba(168, 85, 247, 0.35);
+
           color: #c084fc;
+
         }
+
+
 
         .pill-highlight-amber {
+
           background: rgba(245, 158, 11, 0.12);
+
           border-color: rgba(245, 158, 11, 0.35);
+
           color: #fbbf24;
+
         }
+
+
 
         .card-subtext {
+
           font-size: 10.5px;
+
           color: #64748b;
+
           font-style: italic;
+
           margin-top: auto;
+
           line-height: 1.3;
+
         }
+
+
 
         /* Infinite Live Marquee Ribbon */
+
         .marquee-wrapper {
+
           width: 100%;
+
           overflow: hidden;
+
           background: rgba(10, 16, 32, 0.7);
+
           border-radius: 10px;
+
           border: 1px solid rgba(0, 242, 254, 0.18);
-          padding: 8px 0;
+
+          padding: 5px 0;
+
           position: relative;
+
         }
+
+
 
         .marquee-gradient-left {
+
           position: absolute;
+
           left: 0;
+
           top: 0;
+
           bottom: 0;
+
           width: 40px;
+
           background: linear-gradient(90deg, rgba(8, 14, 30, 0.98), transparent);
+
           z-index: 2;
+
           pointer-events: none;
+
         }
+
+
 
         .marquee-gradient-right {
+
           position: absolute;
+
           right: 0;
+
           top: 0;
+
           bottom: 0;
+
           width: 40px;
+
           background: linear-gradient(270deg, rgba(8, 14, 30, 0.98), transparent);
+
           z-index: 2;
+
           pointer-events: none;
+
         }
+
+
 
         .marquee-content {
+
           display: flex;
+
           width: max-content;
+
           animation: marqueeTrack 22s linear infinite;
+
           gap: 16px;
+
         }
+
+
 
         .marquee-item {
+
           display: inline-flex;
+
           align-items: center;
+
           gap: 7px;
+
           font-family: 'JetBrains Mono', monospace;
+
           font-size: 11px;
+
           font-weight: 600;
+
           color: #cbd5e1;
+
           background: rgba(30, 41, 59, 0.7);
+
           padding: 4px 12px;
+
           border-radius: 8px;
+
           border: 1px solid rgba(255, 255, 255, 0.08);
+
           white-space: nowrap;
+
         }
+
       </style>
 
+
+
       <div class="hud-container">
+
         <div class="laser-beam"></div>
 
+
+
         <!-- Header Bar -->
+
         <div class="hud-topbar">
+
           <div class="hud-title-box">
+
             <div class="hud-icon-gem"></div>
+
             <span class="hud-title">Tech Stack &amp; Creative Arsenal</span>
+
           </div>
+
           <div class="hud-status-chip">
+
             <span class="live-dot"></span>
+
             <span>SYSTEM ACTIVE &#8226; 60 FPS</span>
+
           </div>
+
         </div>
+
+
 
         <!-- 6 Grid Cards -->
+
         <div class="grid-cards">
+
           <!-- 1. Languages -->
+
           <div class="tech-card">
+
             <div class="card-header">
+
               <span class="card-badge-icon">⚡</span>
+
               <span class="card-label">Core Languages</span>
+
             </div>
+
             <div class="card-pills">
+
               <span class="tech-pill pill-highlight-cyan">TypeScript</span>
+
               <span class="tech-pill pill-highlight-amber">Python</span>
+
               <span class="tech-pill pill-highlight-purple">C#</span>
+
               <span class="tech-pill pill-highlight-cyan">C++</span>
+
               <span class="tech-pill pill-highlight-cyan">Lua</span>
+
               <span class="tech-pill">JavaScript</span>
+
               <span class="tech-pill">PHP</span>
+
             </div>
+
             <div class="card-subtext">Object-Oriented, Type-Safe &amp; Native Compilation</div>
+
           </div>
+
+
 
           <!-- 2. Game Dev & 3D -->
+
           <div class="tech-card">
+
             <div class="card-header">
+
               <span class="card-badge-icon">🎮</span>
+
               <span class="card-label">Roblox &amp; 3D Spatial</span>
+
             </div>
+
             <div class="card-pills">
+
               <span class="tech-pill pill-highlight-cyan">Roblox Studio</span>
+
               <span class="tech-pill pill-highlight-cyan">Luau Engine</span>
+
               <span class="tech-pill pill-highlight-amber">Blender</span>
+
               <span class="tech-pill">Three.js</span>
+
               <span class="tech-pill">Unity</span>
+
             </div>
+
             <div class="card-subtext">Client-Server Networking, OOP Game Systems &amp; 3D Assets</div>
+
           </div>
+
+
 
           <!-- 3. AI & Computer Vision -->
+
           <div class="tech-card">
+
             <div class="card-header">
+
               <span class="card-badge-icon">🧠</span>
+
               <span class="card-label">AI &amp; Computer Vision</span>
+
             </div>
+
             <div class="card-pills">
+
               <span class="tech-pill pill-highlight-emerald">Faster-Whisper</span>
+
               <span class="tech-pill pill-highlight-cyan">YuNet ONNX</span>
+
               <span class="tech-pill pill-highlight-purple">Kalman Filter 2D</span>
+
               <span class="tech-pill pill-highlight-amber">PyTorch</span>
+
               <span class="tech-pill">OpenCV</span>
+
             </div>
+
             <div class="card-subtext">Quantized ASR, Real-Time Facecam Tracking &amp; DSP</div>
+
           </div>
+
+
 
           <!-- 4. Frontend & UI/UX -->
+
           <div class="tech-card">
+
             <div class="card-header">
+
               <span class="card-badge-icon">🌐</span>
+
               <span class="card-label">Frontend Architecture</span>
+
             </div>
+
             <div class="card-pills">
+
               <span class="tech-pill pill-highlight-cyan">React 18</span>
+
               <span class="tech-pill">Next.js</span>
+
               <span class="tech-pill pill-highlight-emerald">Vue 3</span>
+
               <span class="tech-pill pill-highlight-cyan">Tailwind CSS</span>
+
               <span class="tech-pill pill-highlight-purple">Vite</span>
+
               <span class="tech-pill">Figma</span>
+
             </div>
+
             <div class="card-subtext">Dark Mode UI, Component Libraries &amp; Kinetic Layouts</div>
+
           </div>
+
+
 
           <!-- 5. Creative Suite & Motion -->
+
           <div class="tech-card">
+
             <div class="card-header">
+
               <span class="card-badge-icon">🎬</span>
+
               <span class="card-label">Creative &amp; Motion</span>
+
             </div>
+
             <div class="card-pills">
+
               <span class="tech-pill pill-highlight-purple">After Effects</span>
+
               <span class="tech-pill pill-highlight-purple">Premiere Pro</span>
+
               <span class="tech-pill pill-highlight-cyan">Remotion</span>
+
               <span class="tech-pill pill-highlight-cyan">Photoshop</span>
+
               <span class="tech-pill pill-highlight-amber">Illustrator</span>
+
             </div>
+
             <div class="card-subtext">2D Motion Graphics, Kinetic Subtitling &amp; Code-Driven Video</div>
+
           </div>
+
+
 
           <!-- 6. Systems & Cloud -->
+
           <div class="tech-card">
+
             <div class="card-header">
+
               <span class="card-badge-icon">🛡️</span>
+
               <span class="card-label">Systems &amp; DevOps</span>
+
             </div>
+
             <div class="card-pills">
+
               <span class="tech-pill pill-highlight-amber">Linux</span>
+
               <span class="tech-pill pill-highlight-cyan">Docker</span>
+
               <span class="tech-pill pill-highlight-emerald">MTCNA Network</span>
+
               <span class="tech-pill pill-highlight-purple">Git / GitHub</span>
+
               <span class="tech-pill">FastAPI</span>
+
             </div>
+
             <div class="card-subtext">MikroTik Certified Network Associate (#2505NA5241)</div>
+
           </div>
+
         </div>
+
+
 
         <!-- Infinite Running Marquee Ribbon -->
+
         <div class="marquee-wrapper">
+
           <div class="marquee-gradient-left"></div>
+
           <div class="marquee-gradient-right"></div>
+
           <div class="marquee-content">
+
             <!-- Set 1 -->
+
             <div class="marquee-item"><span style="color:#38bdf8;">⚡</span> TypeScript</div>
+
             <div class="marquee-item"><span style="color:#00f2fe;">🎮</span> Roblox Luau</div>
+
             <div class="marquee-item"><span style="color:#f59e0b;">🐍</span> Python AI</div>
+
             <div class="marquee-item"><span style="color:#34d399;">🎙️</span> Faster-Whisper</div>
+
             <div class="marquee-item"><span style="color:#a855f7;">📐</span> Kalman Filter 2D</div>
+
             <div class="marquee-item"><span style="color:#38bdf8;">⚛️</span> React 18</div>
+
             <div class="marquee-item"><span style="color:#f43f5e;">🎬</span> After Effects</div>
+
             <div class="marquee-item"><span style="color:#38bdf8;">🎨</span> Remotion Video</div>
+
             <div class="marquee-item"><span style="color:#00f2fe;">🧊</span> Blender 3D</div>
+
             <div class="marquee-item"><span style="color:#34d399;">🌐</span> Three.js WebAR</div>
+
             <div class="marquee-item"><span style="color:#a855f7;">💻</span> C# .NET</div>
+
             <div class="marquee-item"><span style="color:#f59e0b;">🐧</span> Linux / MTCNA</div>
+
+
 
             <!-- Set 2 (Duplicate for seamless loop) -->
+
             <div class="marquee-item"><span style="color:#38bdf8;">⚡</span> TypeScript</div>
+
             <div class="marquee-item"><span style="color:#00f2fe;">🎮</span> Roblox Luau</div>
+
             <div class="marquee-item"><span style="color:#f59e0b;">🐍</span> Python AI</div>
+
             <div class="marquee-item"><span style="color:#34d399;">🎙️</span> Faster-Whisper</div>
+
             <div class="marquee-item"><span style="color:#a855f7;">📐</span> Kalman Filter 2D</div>
+
             <div class="marquee-item"><span style="color:#38bdf8;">⚛️</span> React 18</div>
+
             <div class="marquee-item"><span style="color:#f43f5e;">🎬</span> After Effects</div>
+
             <div class="marquee-item"><span style="color:#38bdf8;">🎨</span> Remotion Video</div>
+
             <div class="marquee-item"><span style="color:#00f2fe;">🧊</span> Blender 3D</div>
+
             <div class="marquee-item"><span style="color:#34d399;">🌐</span> Three.js WebAR</div>
+
             <div class="marquee-item"><span style="color:#a855f7;">💻</span> C# .NET</div>
+
             <div class="marquee-item"><span style="color:#f59e0b;">🐧</span> Linux / MTCNA</div>
+
           </div>
+
         </div>
 
+
+
       </div>
+
     </div>
+
   </foreignObject>
+
 </svg>
+
